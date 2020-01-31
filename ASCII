@@ -1,0 +1,37 @@
+def Asciicode():
+  a=[]
+  for i in range(65,91):
+    a.append(i);
+
+
+  b=[]
+  for i in range(97,123):
+    b.append(i);
+
+
+  char=input("Enter Letter ");
+  if (char.isupper()):
+    listchar=[];
+    for c in range(65, 91): 
+      listchar.append(chr(c));
+ 
+  
+    index=listchar.index(char)
+    print("ASCII Value for",char,"is",a[index])
+
+  elif (char.islower()):
+    listchar1=[];
+    for c in range(97, 123): 
+      listchar1.append(chr(c));
+ 
+  
+    index=listchar1.index(char)
+    print("ASCII Value for",char,"is",b[index])
+
+  else:
+    print("Invalid Input")
+
+Asciicode();
+
+    
+
